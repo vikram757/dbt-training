@@ -1,8 +1,1 @@
-{{
-    config(
-        materialized='table'
-    )
-}}
-
-select * 
-from RAW.GLOBALMART.ORDERS
+{{ config(materialized="table") }} select * from raw.globalmart.orders
